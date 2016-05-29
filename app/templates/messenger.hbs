@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-md-6">
+    <h2> Edit html </h2>
+    {{#bs-form action="capture"}}
+      {{#bs-form-group}}
+        <label class="control-label">HTML</label>
+        {{bs-textarea value=model.html rows=20}}
+     {{/bs-form-group}}
+     {{#bs-button type="primary" action="capture" icon="glyphicon glyphicon-download"}}
+       Capture
+     {{/bs-button}}
+    {{/bs-form}}
+  </div>
+  <div class="col-md-6">
+    <h2>Result</h2>
+    {{#if model.result}}
+      <img src={{model.result}} width={{model.screen.width}} height={{model.screen.height}} />
+    {{/if}}
+  </div>
+</div>

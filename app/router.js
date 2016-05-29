@@ -6,6 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('screenshot');
+  this.route('html');
+  this.route('messenger');
 });
 
 export default Router;
